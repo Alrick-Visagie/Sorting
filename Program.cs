@@ -62,24 +62,5 @@ namespace Sorting
         {           
             return string.Concat(str.OrderBy(c => c)); 
         }
-
-        public static char[] Sort4(string str)
-        {
-            char temp;
-            bool isFinished = false;
-            char[] charstr = str.ToCharArray();
-
-            while (isFinished) 
-            {
-                if (charstr[j] > charstr[j + 1])
-                {
-                    temp = charstr[j];
-                    charstr[j] = charstr[j + 1];
-                    charstr[j + 1] = temp;
-                }
-            }
-            
-            return charstr;
-        }
     }
 }
