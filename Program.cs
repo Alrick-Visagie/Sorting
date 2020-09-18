@@ -11,7 +11,6 @@ namespace Sorting
 
         }
 
-
         public static string RemovePuncAndToLower(string str) 
         {
             string[] punctuationList = { " ", ".", ",", ";", "(", ")", "?" };
@@ -24,7 +23,7 @@ namespace Sorting
             return builder.ToString().ToLower();
         }
 
-        public static char[] Sort1(string str) 
+        public static char[] SortUsingLooping(string str) 
         {
             char temp;
          
@@ -48,7 +47,7 @@ namespace Sorting
 
         
 
-        public static char[] Sort2(string str)
+        public static char[] SortUsingArraySortMethod(string str)
         {
                       
             char[] charstr = str.ToCharArray();
@@ -58,7 +57,7 @@ namespace Sorting
             return charstr;
         }
 
-        public static string Sort3(string str)
+        public static string SortUsingLinq(string str)
         {           
             return string.Concat(str.OrderBy(c => c)); 
         }
